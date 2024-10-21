@@ -1,0 +1,19 @@
+{
+  "name": "cp-06",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "lite-server",
+    "dev:watch": "concurrently \"lite-server\" \"node-sass -w scss -r -o css\"",
+    "build": "node-sass ./scss -o css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.0.1",
+    "lite-server": "^2.6.1",
+    "node-sass": "^9.0.0"
+  }
+}

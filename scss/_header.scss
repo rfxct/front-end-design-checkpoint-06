@@ -1,0 +1,38 @@
+.books__header {
+    position: fixed;
+    width: 100vw;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background-primary;
+    z-index: 10;
+
+    >h1 {
+        color: $white;
+        letter-spacing: -2.5px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    nav.menu {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        >a {
+            color: $white;
+            font-weight: 600;
+            text-decoration: none;
+
+            &.active,
+            &:hover {
+                color: $accent-primary;
+            }
+
+            &:hover {
+                transform: translateY(-1px);
+            }
+        }
+    }
+}

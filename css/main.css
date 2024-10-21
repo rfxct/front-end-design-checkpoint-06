@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+.books__header {
+  position: fixed;
+  width: 100vw;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #230903;
+  z-index: 10; }
+  .books__header > h1 {
+    color: #f4f2f3;
+    letter-spacing: -2.5px;
+    cursor: pointer;
+    user-select: none; }
+  .books__header nav.menu {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; }
+    .books__header nav.menu > a {
+      color: #f4f2f3;
+      font-weight: 600;
+      text-decoration: none; }
+      .books__header nav.menu > a.active, .books__header nav.menu > a:hover {
+        color: #D3B88C; }
+      .books__header nav.menu > a:hover {
+        transform: translateY(-1px); }
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  .about > p {
+    max-width: calc(100% - 120px); }
+  .about > img {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+.books > .book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; }
+  .books > .book-list > .book {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    max-width: 220px;
+    background-color: #f4f2f3;
+    border-radius: 20px;
+    box-shadow: 0px 0px 23px -2px rgba(0, 0, 0, 0.342);
+    overflow: hidden; }
+
+.book-1 {
+  border: 2px solid #f8991d; }
+  .book-1 > h3 .book-index::after {
+    content: "1 - "; }
+
+.book-2 {
+  border: 2px solid #6eaee0; }
+  .book-2 > h3 .book-index::after {
+    content: "2 - "; }
+
+.book-3 {
+  border: 2px solid #573877; }
+  .book-3 > h3 .book-index::after {
+    content: "3 - "; }
+
+.book-4 {
+  border: 2px solid #66be70; }
+  .book-4 > h3 .book-index::after {
+    content: "4 - "; }
+
+.book-5 {
+  border: 2px solid #7f4c33; }
+  .book-5 > h3 .book-index::after {
+    content: "5 - "; }
+
+.book-6 {
+  border: 2px solid #4a75b9; }
+  .book-6 > h3 .book-index::after {
+    content: "6 - "; }
+
+.book-7 {
+  border: 2px solid #f05e22; }
+  .book-7 > h3 .book-index::after {
+    content: "7 - "; }
+
+.book-8 {
+  border: 2px solid #000000; }
+  .book-8 > h3 .book-index::after {
+    content: "8 - "; }
+
+.book-9 {
+  border: 2px solid #f5ac27; }
+  .book-9 > h3 .book-index::after {
+    content: "9 - "; }
+
+.book-10 {
+  border: 2px solid #11497b; }
+  .book-10 > h3 .book-index::after {
+    content: "10 - "; }
+
+.book-11 {
+  border: 2px solid #c8528e; }
+  .book-11 > h3 .book-index::after {
+    content: "11 - "; }
+
+.book-12 {
+  border: 2px solid #65989b; }
+  .book-12 > h3 .book-index::after {
+    content: "12 - "; }
+
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  transition: all 300ms; }
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 118px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; }

@@ -1,0 +1,68 @@
+// About
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    >p {
+        max-width: calc(100% - 120px);
+    }
+
+    >img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+// Books
+$colors: #f8991d,
+#6eaee0,
+#573877,
+#66be70,
+#7f4c33,
+#4a75b9,
+#f05e22,
+#000000,
+#f5ac27,
+#11497b,
+#c8528e,
+#65989b;
+
+@mixin set-book-index($book-index) {
+    .book-#{$book-index} {
+        >h3 .book-index::after {
+            content: "#{$book-index} - ";
+        }
+
+        border: 2px solid nth($colors, $book-index);
+    }
+}
+
+.books {
+    >.book-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+
+        >.book {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+            max-width: 220px;
+            background-color: $white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 23px -2px rgba(0, 0, 0, 0.342);
+            overflow: hidden;
+        }
+    }
+}
+
+@for $i from 1 through 12 {
+    @include set-book-index($i)
+}
